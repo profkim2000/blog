@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../../database/">
+        <link rel="prev" href="../../dev/python/python/">
       
       
-        <link rel="next" href="../importFromQGIS/">
+        <link rel="next" href="../postgresql/install_postgresql_16-3/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
       
-        <title>postgresql 설치 - Eugene's Blog</title>
+        <title>database - Eugene's Blog</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#postgresql" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -78,7 +73,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Eugene&#39;s Blog" class="md-header__button md-logo" aria-label="Eugene's Blog" data-md-component="logo">
+    <a href="../.." title="Eugene&#39;s Blog" class="md-header__button md-logo" aria-label="Eugene's Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -98,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              postgresql 설치
+              database
             
           </span>
         </div>
@@ -173,7 +168,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Eugene&#39;s Blog" class="md-nav__button md-logo" aria-label="Eugene's Blog" data-md-component="logo">
+    <a href="../.." title="Eugene&#39;s Blog" class="md-nav__button md-logo" aria-label="Eugene's Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -226,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/cpp/cpp/" class="md-nav__link">
+      <a href="../../dev/cpp/cpp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -247,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/java/java/" class="md-nav__link">
+      <a href="../../dev/java/java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -268,7 +263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/rust/rust/" class="md-nav__link">
+      <a href="../../dev/rust/rust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -289,7 +284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/python/python/" class="md-nav__link">
+      <a href="../../dev/python/python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -351,10 +346,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../database/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -363,6 +365,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -372,19 +375,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -398,7 +399,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             postgreSQL
@@ -409,30 +410,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    postgresql 설치
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../postgresql/install_postgresql_16-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -441,80 +422,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      설치 파일 다운로드
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      프로그램 설치
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgis-12" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgis 설치 1/2
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgresql_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgreSQL 실행
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgresql_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgreSQL 접속
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgis-22" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgis 설치 2/2
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -527,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../importFromQGIS/" class="md-nav__link">
+      <a href="../postgresql/importFromQGIS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -573,70 +480,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      설치 파일 다운로드
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      프로그램 설치
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgis-12" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgis 설치 1/2
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgresql_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgreSQL 실행
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgresql_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgreSQL 접속
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgis-22" class="md-nav__link">
-    <span class="md-ellipsis">
-      postgis 설치 2/2
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -651,79 +494,9 @@
                   
 
 
-<h1 id="postgresql">postgreSQL 설치</h1>
-<p>작성일: 2024. 7. 15.</p>
-<h2 id="_1">설치 파일 다운로드</h2>
-<p>이 문서는 postgreSQL 16.3 설치 방법에 대한 설명이다.<br />
-다음 순서대로 진행한다.</p>
-<p><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">postgreSQL 16 윈도우 버전 다운로드 페이지</a>로 이동한다.<br />
-  * postgreSQL 홈페이지에서는 다운로드를 제공하지 않음.</p>
-<p><br></p>
-<p>다음과 같이 윈도우 버전을 클릭해 다운로드 받는다.</p>
-<p><img alt="" src="../img/20240716211626.png" /></p>
-<h2 id="_2">프로그램 설치</h2>
-<p><img alt="" src="../img/20240716212012.png" /></p>
-<p><img alt="" src="../img/20240716212054.png" /><br />
-기본 값 그대로 사용</p>
-<p><img alt="" src="../img/20240716212158.png" /><br />
-기본 값 그대로 사용</p>
-<p><img alt="" src="../img/20240716212215.png" /><br />
-기본 값 그대로 사용</p>
-<p><img alt="" src="../img/20240716212245.png" /><br />
-postgreSQL의 관리자는 기본적으로 <code>postgres</code>라는 아이디를 가진다. 그 비밀번호를 설정한다.<br />
-테스트용 설치라면 쉬운 비밀번호를,<br />
-실 사용을 위한 설치라면 매우 어려운 비밀번호를 설정한다.</p>
-<p>수업 중에는 이 비밀번호를 <code>postpw</code> 로 하겠다.</p>
-<p><img alt="" src="../img/20240716212626.png" /><br />
-기본 값 5432 포트를 그대로 사용</p>
-<p><img alt="" src="../img/20240716212712.png" /><br />
-기본 값 그대로 사용한다.</p>
-<p><img alt="" src="../img/20240716212752.png" /><br />
-여태까지의 설정을 보여주고 있다.  </p>
-<p><img alt="" src="../img/20240716212829.png" /></p>
-<p><img alt="" src="../img/20240716212848.png" /></p>
-<p><img alt="" src="../img/20240716213325.png" /></p>
-<p>이렇게 postgreSQL 설치는 별다른 설정없이 완료된다.</p>
-<p><img alt="" src="../img/20240716214044.png" /></p>
-<p><br></p>
-<h2 id="postgis-12">postgis 설치 1/2</h2>
-<p><img alt="" src="../img/20240716220318.png" /></p>
-<p>stack builder에서 위와 같이 서버의 위치를 "PostgreSQL 16(x64) on port 5432"로 설정해 준다.</p>
-<p><img alt="" src="../img/20240716220514.png" /></p>
-<p>위와 같이 PostGIS를 선택한다.</p>
-<p><img alt="" src="../img/20240716221059.png" /></p>
-<p><img alt="" src="../img/20240716221341.png" /></p>
-<p><img alt="" src="../img/20240716221544.png" /></p>
-<p><img alt="" src="../img/20240716221559.png" /></p>
-<p><img alt="" src="../img/20240716221613.png" /></p>
-<p><img alt="" src="../img/20240716221710.png" /></p>
-<p><br></p>
-<h2 id="postgresql_1">postgreSQL 실행</h2>
-<p>postgreSQL은 따로 실행버튼이 없다. 설치하면 저절로 내부적으로 실행된다. 별도의 화면도 없다. </p>
-<p><br></p>
-<h2 id="postgresql_2">postgreSQL 접속</h2>
-<p>윈도우 키를 누른다.</p>
-<p>팝업되는 창에서 아래로 내리다 보면 P로 시작하는 프로그램들이 보이고 그 아래 PostgreSQL 16이라는 메뉴도 보인다. 방금 설치한 프로그램들이다.</p>
-<p><img alt="" src="../img/20240716214350.png" /></p>
-<p>아래와 같이 <code>pgAdmin 4</code> 프로그램을 실행한다. postgreSQL 서버에 접속하는데 사용하는 클라이언트 프로그램이다.</p>
-<p><img alt="" src="../img/20240716214805.png" /></p>
-<p>아래와 같이 "PostgreSQL 16"을 더블클릭해 방금 설치한 postgreSQL 서버에 접속한다.</p>
-<p><img alt="" src="../img/20240716215408.png" /></p>
-<p>아까 정해준 postgres의 비밀번호를 입력한다.</p>
-<p><img alt="" src="../img/20240716215504.png" /></p>
-<p>아래와 같이 서버에 접속한 모습을 볼 수 있다.</p>
-<p><img alt="" src="../img/20240716215841.png" /></p>
-<p>이렇게 서버에 접속되면 postgreSQL 설치가 잘 된 것이다.</p>
-<p><br></p>
-<h2 id="postgis-22">postgis 설치 2/2</h2>
-<p><img alt="" src="../img/20240716222109.png" /></p>
-<p>pgAdmin에서 위와 같이</p>
-<p>Servers &gt; PostgreSQL 16 &gt; Databases &gt; Postgres &gt; Extensions를 오른쪽 클릭한 다음, </p>
-<p>Create &gt; Extension을 선택한다.</p>
-<p><img alt="" src="../img/20240716222312.png" /></p>
-<p>위와 같이 postgis를 선택하고 [save] 버튼을 누른다.</p>
-<p><img alt="" src="../img/20240716223419.png" /></p>
-<p>postgis가 설치되었다.</p>
+  <h1>database</h1>
+
+
 
 
 
@@ -770,12 +543,12 @@ postgreSQL의 관리자는 기본적으로 <code>postgres</code>라는 아이디
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
-        <script src="../../../js/open_in_new_tab.js"></script>
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   </body>
