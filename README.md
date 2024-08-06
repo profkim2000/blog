@@ -1,4 +1,4 @@
 # blog
 Eugene Kim Blog
 
-https://github.com/profkim2000
+https://profkim2000.github.io/blog
