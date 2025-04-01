@@ -67,3 +67,9 @@ p
     font-family: 'Nanum Gothic', sans-serif;    
     font-weight:400;
 }
+
+img {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 0px; 
+  }
