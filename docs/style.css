@@ -36,6 +36,10 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
 }
 
+body
+{
+    font-family: 'Nanum Gothic';    
+}
 
 h1
 {
